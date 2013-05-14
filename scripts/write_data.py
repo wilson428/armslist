@@ -96,7 +96,6 @@ def main():
     args = parser.parse_args()
     if args.latlng:
         args.latlng = [float(x) for x in args.latlng.split(",")]
-    print args
 
     write_grouped(args.gun_type, args.latlng, args.radius)
     

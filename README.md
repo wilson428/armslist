@@ -106,10 +106,14 @@ which limits an individual IP address to 2,500 queries per day.
 
 # Mapping
 
-To generate CSV files of locations for guns, 
+To generate CSV files of locations for guns ads, run:
 
+	./scripts/write_data.py --type=Handguns
 	
+Other valid types are "Rifles" and "Shotguns."
 
+To limit the results to a certain region, give the script the coordinates of the center point and a radius in miles:
 
-SELECT g.title, g.category, g.wanted, g.firearm_type, g.model, g.manufacturer, g.action, g.price, l.place, l.lat, l.lng FROM guns as g INNER JOIN locations as l on g.location = l.original WHERE l.lat IS NOT NULL AND category='Handguns' and wanted LIKE "For%"
+	./scripts/write_data.py --type=Handguns --point=41.85,-87.65 --radius=150
 
+The coordinates are latitude and longitude.
