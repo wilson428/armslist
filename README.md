@@ -1,6 +1,16 @@
 An analysis of ArmsList.com 
 =========
 
+# Updating from Python 2 to Python 3
+
+This collection of scripts is seven years old and in need of an update to Python 3. Some of the `import` statements are core libraries that are largely unchanged, and the current [`requirements.txt`](requirements.txt) is an incomplete attempt to include those libraries that are sufficiently unchanged. Here are a few that do need to be updated:
+
+	+ `urllib2` is now `urllib3`
+	+ `htmlentitydefs` is no longer available
+	+ `shapefile` also appears to have changed.
+
+Pull requests welcome!
+
 # Scraping the data
 The raw data for this project was retrieved en mass using ```wget``` form the command line:
 

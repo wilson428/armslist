@@ -1,0 +1,12 @@
+DateTime==4.3
+download==0.3.5
+geographiclib==1.50
+geopy==2.0.0
+lxml==4.5.2
+python-dateutil==2.8.1
+requests==2.24.0
+scrapelib==1.2.0
+tostring==0.1.0
+urllib3==1.25.10
+utils==1.0.1
+uuid==1.30
